@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="librerias/bootstrap.min.css"> <!--LIBRERIAS DE BOOTSTRAP-->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+   <title>Examen-3-IHC</title>
+
+</head> 
+   <!-- ================= HEADER INI ========================= -->
+ <header>
+ <nav class="navbar navbar-expand-lg navbar-dark primary-color" style="background-color: #1C2331;">
+   <a class="navbar-brand" href="index.html">Análisis y diseño de IHC</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+     aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="basicExampleNav">
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+         <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+     </li>
+    </ul>
+   </div>  
+ </nav>
+ </header>
+    <!-- ================= HEADER END========================= -->
+<body> 
+    <div class="title-center">
+        <h4>Aplicación AR</h4>
+    </div> <br>
+<div class="caj-1" >
+    <section class="row">
+        <div class="row container-fluid">
+    <div class="col-md-5 offset-md-1">                   
+    <div class="jumbotron col-md-12" style="margin-left: 5%; height: 90%;
+    background: linear-gradient(to right,#26C6DA, #4DD0E1, #B2EBF2)">                            
+    <div class="row">
+        <div class="input-group">
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="file" accept="image/*,MIME_type/*" onchange="patron()" >
+            <label class="custom-file-label" >Cargar Patrón</label>                          
+        </div>   
+        </div>
+        
+       <br> <br> <img class="rounded mx-auto d-block img-thumbnail ball"  id="img" width="280px" height="280px"> </div> <br>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    
+<div class="caj-3">
+<section class="row">
+    <div class="row container-fluid">
+    <div class="col-md-5 offset-md-1">                   
+    <div class="jumbotron col-md-12" style="margin-bottom: 20%; margin-left: 5%;  height: 80%;
+    background: linear-gradient(to right,#26C6DA, #4DD0E1, #B2EBF2)">                            
+    <div class="row">
+        <div class="input-group">
+        <div class="custom-file">
+        <input type="file" class="custom-file-input" id="file1" accept="image/*,MIME_type/*" onchange="modelo()" >
+        <label class="custom-file-label" for="inputGroupFile01"> Cargar Modelo</label>                           
+        </div>   
+        </div>
+        <br> <br> <img class="rounded mx-auto d-block img-thumbnail ball"  id="img1" width="280px" height="280px"> </div> <br>
+       <button type="button" Onclick="arPantalla()" class="btn btn-dark" style="margin-left: 30%;"> Aceptar </button>
+       <a class="btn btn-dark" href="exa3-ihc.html" role="button"><i class="fas fa-undo-alt"></i></a>    
+    </div>
+    </div>
+    </div>   
+    </div>
+</section>
+</div>
+
+<div class="caj-2">
+    <section class="row">
+        <div class="row container-fluid">
+        <div class="col-md-5 offset-md-1">                   
+        <div class="jumbotron col-md-12" style="margin-bottom: 20%; margin-left: 5%;
+        background: linear-gradient(to right,#26C6DA, #4DD0E1, #B2EBF2)">                            
+        <div class="row">
+            <div class="input-group">
+            <div id="camara" class="custom-file" style="justify-content: center; width:400px; height:250px;">
+                <!--Agregar la camara web-->
+                
+            </div>   
+            </div> 
+            <!--<br> <br> <img class="rounded mx-auto d-block img-thumbnail ball"  id="img1" width="700px" height="300px"> </div> <br>-->
+        </div>
+        </div>
+        </div>   
+        </div>
+    </section>
+</div>
+    
+    <!-- ================= FOOTER INI========================= -->
+    <footer class="page-footer font-small blue fixed-bottom"  style="background-color: #1C2331;">
+      <div class="footer-copyright text-center text-light py-3"> <b>© 2021 LHDA & ZACD</b></div>
+    </footer>
+    <!-- ================= FOOTER END========================= -->
+   <script src="librerias/jquery-3.6.0.min.js"></script>
+   <script src="librerias/popper.min.js"></script>
+   <script src="librerias/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/cf2eebf453.js" crossorigin="anonymous"></script>
+   <script src="main.js"></script>
+   <!-- =================LIBRERIAS========================= -->
+
+</body>
+</html>
